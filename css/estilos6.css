@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	background-image: url(../img/cafe-goku.jpg);
+	font-family: Comic Sans Nef;
+	text-align: center;
+	color: #ff3a00;
+
+
+}
+	
+a{
+	text-decoration: none;
+}
+.contenedor-principal{
+	max-width: 1300px;
+	max-height: 1300px;
+	margin:80px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.contenedor_tarjeta{
+margin: 65px;
+display:inline-block;
+
+}
+.contenedor_tarjeta:hover figure{
+transform:perspective(600px) rotateY(180deg);
+
+}
+.contenedor_tarjeta:hover figure img {
+  filter:blur(2.5px);
+
+}
+
+figure{
+	width: 300px;
+	height: 350px;
+	margin: 0;
+	position:relative;
+	transition:all ease 0.8s;
+	transform-style: preserve-3d;
+	transform:perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+/*backface-visibility:hidden;*/
+}
+figure .frontal{
+	display: block;
+	background: #00ff61;
+
+}
+
+figure .trasera{
+position: absolute;
+top:0px;
+padding: 20px;
+color:#8a0b62;
+transform:perspective(600px) rotateY(180deg);
+backface-visibility:hidden;
+
+}
+
+figure .trasera p {
+	font-size: 17px;
+	font-weight: 500;
+	color:#004dff;
+	font-family: Bernard MT Condensed;
+	text-shadow: 1px 4px 21px rgba(164,0,255,0.6);
+}
+
+figure .trasera h1{
+	font-weight: 700;
+	font-size: 34px;
+	color: #0bfc00;
+
+}
+h2::after, h2::before{
+	content:'';
+	position:absolute;
+	width:200px;
+	height:10px;
+	background-color:currentColor;
+	top:0.7em;
+	transform:scale(1.0);
+	transition:all 0.6s ease-in;
+	top:7%;
+
+}
+
+
+h2:hover::after, h2:hover::before{
+	transform:scale(0.1);
+}
+
+h2::after{
+	left:200px;
+}
+
+h2::before{
+	right: 200px;
+}
+h2 {
+    font-size:70px; 
+    font-weight: bold; 
+    text-shadow: 3px 3px 5px black; 
+}

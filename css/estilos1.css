@@ -1,0 +1,128 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #44cf22;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+}
+
+.contenedor-principal{
+	background:#cf2222;
+
+	width: 90%;
+	max-width: 1300px;
+	margin: 50px auto;
+	padding: 50px;
+	border-radius: 15px;
+}
+header{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom:100px ;
+}
+.logos{
+	font-size:30px;
+	font-weight: 900;
+	color:#effa03 ;
+	text-decoration: none;
+	transition: all 0.5s ease;
+
+}
+
+.menu{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.menu a{
+font-size: 25px;
+border-bottom:2px solid transparent;
+margin-left: 40px;
+color: #0703fa;
+text-decoration: none;
+
+}
+
+.menu a:hover{
+border-bottom: 2px solid #42cc68;
+color:#fa7003  ;
+
+}
+main{
+	display:flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap:50px;
+}
+main .contenedor-image{
+width: 30%;
+margin-right: 20px;
+}
+img{
+height:350px;
+width:300px;
+border-radius: 20%;
+
+}
+
+  .contenedor-texto.titulo{
+
+	font-size: 45px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+.contenedor-texto p{
+	margin-bottom: 40px;
+	line-height: 35px;
+	font-size: 20px;
+}
+
+.contenedor-texto .cafe{
+font-weight: bold;
+color: #ef03fa ;
+font-style: normal;
+
+}
+.btn_link{
+	display: inline-block;
+	padding: :20px 40px;
+	border-radius: 100px;
+	background: #fa8d03 ;
+	margin-right: 15px;
+	text-decoration: none;
+	background-image: linear-gradient(225deg,#28fa03 0,#00cdde , #038dfa 100%);
+	
+}
+
+.btn_link:hover,
+.btn_link activo{
+	color:white ;
+	background-image: linea-gradient(225deg, #de0400  0,#006cde,#29de00   100%);
+}
+
+.menu a[href="#2"] {
+    background-image: linear-gradient(225deg, #23c210  0, #10bfc2,#f0f009 100%); /* Degradado de coral a tomate */
+}
+
+.menu a[href="#2"]:hover {
+    background-image: linear-gradient(225deg, #23c210  0 , #10bfc2, #f0f009 100%); 
+  }
+
+
+.menu a[href="autobiografia.html"] {
+    background-image: linear-gradient(225deg, #23c210 0 , #10bfc2, #f0f009 100%); 
+}
+
+
+.menu a[href="galeria.html"] {
+    background-image: linear-gradient(225deg, #23c210 0, #10bfc2, #f0f009 100%); 
+}
