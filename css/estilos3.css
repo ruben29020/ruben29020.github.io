@@ -1,70 +1,94 @@
-*{
-	margin:0;
-	padding:0;
+* {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
-
-}
-body{
-	background-image: url(../img/dia-de-goku.jpg);
-	background-size: cover;
-	font-family: Bernard MT Condensed;
 }
 
-.image-box{
+body {
+	background-color: #f3e1d5; /* Fondo suave y cálido */
+	background-image: url('https://example.com/path-to-coffee-background.jpg'); /* Imagen de fondo que evoca cafetería */
+	background-size: cover; /* Asegura que la imagen cubra todo */
+	font-family: 'Verdana', sans-serif; /* Fuente legible y moderna */
+	color: #4b3c32; /* Color de texto principal */
+}
+
+.image-box {
 	width: 280px;
 	height: 325px;
-	border-radius:50% ;
-	box-shadow: 10px 10px 44px 0px rgba(18,255,5,1);
-
+	border-radius: 50%;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+	transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transición para efectos más suaves */
 }
 
-.box{
-	width:430px;
-background: rgba(215, 215, 215, 0.5);
+.image-box:hover {
+	transform: scale(1.05) rotate(3deg); /* Efecto de escala y rotación al pasar el mouse */
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa en hover */
+}
+
+.box {
+	width: 430px;
+	background: rgba(255, 255, 255, 0.9); /* Fondo blanco suave */
 	margin: 15px auto;
-	border-radius: 10px;
-	color: #f9f9f9;
+	border-radius: 15px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
 	text-align: center;
-}
-.box h1{
-	font-size:35px;
-	letter-spacing: 4px;
-	font-weight: 600;
-	border-top: 2px;
-	margin-bottom: 5px;
-	color:#9033FF;
-	text-shadow: 2px 2px 4px #0017ff;
-}
-.box h2{
-	font-size: 42px;
-	letter-spacing: 4px;
-	font-weight:500 ;
-	margin-bottom: 5px;
+	padding: 20px; /* Espaciado interno */
+	transition: transform 0.3s ease; /* Transición suave para la caja */
 }
 
-.box p{
+.box:hover {
+	transform: translateY(-5px); /* Efecto de desplazamiento al pasar el mouse */
+}
+
+.box h1 {
+	font-size: 36px;
+	letter-spacing: 2px; /* Espaciado más sutil */
+	font-weight: 700; /* Peso de fuente más fuerte */
+	margin-bottom: 10px; /* Espacio ajustado */
+	color: #5c3820; /* Color café para los títulos */
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Sombra más sutil para el texto */
+}
+
+.box h2 {
+	font-size: 44px; /* Aumentar el tamaño del subtítulo */
+	letter-spacing: 1px; /* Espaciado más sutil */
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #714427; /* Un tono más oscuro de café */
+}
+
+.box p {
 	text-align: justify;
 	font-weight: 300;
+	color: #4b3c32; /* Color gris oscuro */
+	line-height: 1.7; /* Espaciado entre líneas para mejor legibilidad */
+	margin-bottom: 20px; /* Espacio inferior para separación */
 }
-ul{
+
+ul {
 	list-style: none;
 	margin-top: 10px;
-
+	padding: 0; /* Eliminar padding por defecto */
 }
 
-ul li{
+ul li {
 	display: inline-block;
-
 }
 
-.box ul li a{
-	color: #ff5233;
+.box ul li a {
+	color: #ff5233; /* Color vibrante para los enlaces */
 	font-size: 30px;
-	padding: 7px 13px;
+	padding: 10px 15px; /* Espacio interno ajustado */
 	display: block;
-	transition: all 0.7s ease-in-out;
+	border-radius: 5px; /* Bordes suaves */
+	background: rgba(255, 255, 255, 0.3); /* Fondo suave detrás del enlace */
+	transition: all 0.3s ease; /* Transición suave para hover */
+	text-decoration: none; /* Sin subrayado */
 }
-.box ul li a{
-	color: #ff3380;
-	transform: scale(1.4);
+
+.box ul li a:hover {
+	color: #ff3380; /* Color para el hover de los enlaces */
+	background: rgba(255, 255, 255, 0.6); /* Efecto de fondo en hover */
+	transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
 }
