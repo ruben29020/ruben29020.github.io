@@ -2,25 +2,23 @@
 body {
     background-image: url(../img/cafe.jpg); 
     background-size: cover;
-    font-family: Century Gothic;
+    background-color: #F5F5DC; /* Color beige claro para transmitir calidez y serenidad cuando no se vea la imagen */
+    font-family: 'Century Gothic', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 img {
     display: block;
     margin: 0 auto;
-}
-img {
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-img {
-    display: block;
-    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera para darle profundidad a la imagen */
+    border-radius: 10px; /* Borde suave, para evocar cercanía y amabilidad */
     transition: 0.3s ease;
 }
 
 img:hover {
-    opacity: 0.8;
+    opacity: 0.85; /* Reduje la opacidad para que el cambio no sea tan drástico */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Mayor sombra al hacer hover, creando un efecto de elevación más visible */
+    transform: scale(1.05); /* Ligera ampliación para captar la atención del usuario */
+    filter: brightness(1.1) contrast(1.05); /* Mejora la imagen, haciéndola más vívida y atractiva */
 }

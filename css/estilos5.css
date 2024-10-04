@@ -1,31 +1,87 @@
 body {
-    background-image: url(../img/6.jpeg); 
-    background-size: cover;
-    font-family: Century Gothic;
+    background-color: #f8f5f2; /* Color crema suave para un ambiente acogedor */
+    font-family: 'Century Gothic', sans-serif;
     margin: 0;
     padding: 0;
-    color:#ff33e3;
+    color: #333333; /* Texto en gris oscuro para mejor legibilidad */
 }
-img {
-    display: block;
-    margin: 0 auto;
-}
-img {
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-img {
-    display: block;
-    margin: 0 auto;
-    transition: 0.3s ease;
-}
-
-img:hover {
-    opacity: 0.8;
-}
-
 
 h1, h2, h3 {
-    color: #ffcc00; /* Cambia el color de los encabezados */
+    text-align: center; /* Centra los encabezados */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para destacar */
+}
+
+h1 {
+    font-size: 70px; /* Aumenta el tamaño del encabezado principal */
+    color: #6d4c41; /* Color marrón suave para evocar café */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+h2 {
+    font-size: 50px; /* Ajusta el tamaño del segundo nivel de encabezado */
+    color: #d32f2f; /* Color rojo oscuro para llamar la atención */
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 35px; /* Ajusta el tamaño del tercer nivel de encabezado */
+    color: #8e24aa; /* Color púrpura para un toque creativo */
+    margin-top: 15px;
+}
+
+.content {
+    width: 90%;
+    max-width: 1200px; /* Ampliar el ancho máximo para un diseño más espacioso */
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.table {
+    width: 300px; /* Ancho específico para las tarjetas */
+    height: 400px; /* Altura específica */
+    margin: 20px; /* Espaciado entre tarjetas */
+    background-color: #fff3e0; /* Fondo claro para las tarjetas */
+    border: 3px solid #8d6e63; /* Bordes marrón para la tarjeta */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.table:hover {
+    transform: scale(1.05); /* Escalar la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+.table h2 {
+    font-size: 25px; /* Tamaño para subtítulos */
+    color: #6d4c41; /* Color marrón para coherencia visual */
+}
+
+.table p {
+    font-size: 18px; /* Tamaño de texto para descripciones */
+    color: #555555; /* Texto gris oscuro para el contenido */
+}
+
+.boton {
+    display: inline-block;
+    width: 180px;
+    padding: 12px;
+    background-color: #ffab40; /* Color naranja suave para el botón */
+    border-radius: 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Texto en blanco */
+    margin: 20px auto; /* Espaciado automático y centrado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para el botón */
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #ff6f20; /* Color más intenso al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
 }
