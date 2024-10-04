@@ -1,121 +1,127 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body{
-
-	background-image: url(../img/cafe-goku.jpg);
-	font-family: Comic Sans Nef;
+body {
+	background-color: #faf0e6; /* Fondo beige claro para una sensación cálida */
+	font-family: 'Arial', sans-serif; /* Fuente estándar */
 	text-align: center;
-	color: #ff3a00;
-
-
+	color: #003366; /* Azul oscuro */
 }
-	
-a{
+
+a {
 	text-decoration: none;
 }
-.contenedor-principal{
+
+.contenedor-principal {
 	max-width: 1300px;
-	max-height: 1300px;
-	margin:80px auto;
+	margin: 80px auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	
 }
 
-.contenedor_tarjeta{
-margin: 65px;
-display:inline-block;
-
+.contenedor_tarjeta {
+	margin: 65px;
+	display: inline-block;
 }
-.contenedor_tarjeta:hover figure{
-transform:perspective(600px) rotateY(180deg);
 
+.contenedor_tarjeta:hover figure {
+	transform: perspective(600px) rotateY(180deg);
 }
+
 .contenedor_tarjeta:hover figure img {
-  filter:blur(2.5px);
-
+	filter: blur(1px); /* Menos desenfoque al pasar el cursor */
+	box-shadow: 0 4px 8px rgba(255, 140, 0, 0.2); /* Sombra cálida en hover */
 }
 
-figure{
+figure {
 	width: 300px;
 	height: 350px;
 	margin: 0;
-	position:relative;
-	transition:all ease 0.8s;
+	position: relative;
+	transition: all ease 0.8s;
 	transform-style: preserve-3d;
-	transform:perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+	border: 2px solid #ffcc99; /* Marco cálido alrededor de la imagen */
 }
 
 figure .frontal,
-figure .trasera{
-width: 100%;
-height: 100%;
-border-radius: 10px;
-/*backface-visibility:hidden;*/
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
 }
-figure .frontal{
+
+figure .frontal {
 	display: block;
-	background: #00ff61;
-
+	background: #007bff; /* Azul claro */
 }
 
-figure .trasera{
-position: absolute;
-top:0px;
-padding: 20px;
-color:#8a0b62;
-transform:perspective(600px) rotateY(180deg);
-backface-visibility:hidden;
-
+figure .trasera {
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #ffffff; /* Texto blanco para mejor contraste */
+	background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para resaltar la imagen */
+	backdrop-filter: blur(5px); /* Efecto de desenfoque del fondo */
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('/path/to/your-image.png'); /* Imagen de fondo */
+	background-size: cover;
+	background-position: center;
 }
 
 figure .trasera p {
 	font-size: 17px;
 	font-weight: 500;
-	color:#004dff;
-	font-family: Bernard MT Condensed;
-	text-shadow: 1px 4px 21px rgba(164,0,255,0.6);
+	color: #ffffff; /* Blanco para el texto */
+	font-family: 'Arial', sans-serif;
+	text-shadow: 1px 4px 21px rgba(0, 0, 0, 0.6);
 }
 
-figure .trasera h1{
+figure .trasera h1 {
 	font-weight: 700;
 	font-size: 34px;
-	color: #0bfc00;
-
-}
-h2::after, h2::before{
-	content:'';
-	position:absolute;
-	width:200px;
-	height:10px;
-	background-color:currentColor;
-	top:0.7em;
-	transform:scale(1.0);
-	transition:all 0.6s ease-in;
-	top:7%;
-
+	color: #ffcc99; /* Título cálido */
 }
 
-
-h2:hover::after, h2:hover::before{
-	transform:scale(0.1);
+h2::after,
+h2::before {
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 10px;
+	background-color: currentColor;
+	top: 0.7em;
+	transform: scale(1.0);
+	transition: all 0.6s ease-in;
+	top: 7%;
 }
 
-h2::after{
-	left:200px;
+h2:hover::after,
+h2:hover::before {
+	transform: scale(0.1);
 }
 
-h2::before{
-	right: 200px;
+h2::after {
+	left: 150px;
 }
+
+h2::before {
+	right: 150px;
+}
+
 h2 {
-    font-size:70px; 
-    font-weight: bold; 
-    text-shadow: 3px 3px 5px black; 
+    font-size: 70px;
+    font-weight: bold;
+    color: #8B4513; /* Marrón oscuro para transmitir calidez y conexión natural */
+    text-shadow: 3px 3px 5px black;
 }
